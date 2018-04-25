@@ -1,0 +1,16 @@
+﻿@model  DatePickerTest.Models.DateModel
+<script src="~/Scripts/datepicker.js"></script>
+
+@using (Html.BeginForm("IndexPost", "Home", FormMethod.Post, new { @id = "frmtest" }))
+{
+
+    <div class='editor-label'>
+        @Html.LabelFor(model => model.DOB)
+    </div>
+    <div class='editor-field'>
+        @Html.TextBoxFor(model => model.DOB, new { @class = "form-control, datetype", type = "text" })
+        @Html.ValidationMessageFor(model => model.DOB)
+    </div>
+    <button type="submit">submit</button>
+
+}

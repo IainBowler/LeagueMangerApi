@@ -1,0 +1,37 @@
+﻿body {
+    background-color: #eef4ff
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.advert{
+    background-color: white;
+    width: 32%;
+    float: left;
+    margin: 6%;
+    border: 3px solid black;
+    padding: 2%;
+    min-height: 230px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.advertlink:link{
+    color: black;
+}
+
+.advertlink:visited{
+    color: black;
+}
+
+.advertlink:hover{
+    background-color: #eebbff;
+    color: black;
+}

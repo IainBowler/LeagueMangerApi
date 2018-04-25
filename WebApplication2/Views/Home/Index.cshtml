@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+@section scripts
+{
+    <script>
+        function getTree() {
+            // Some logic to retrieve, or generate tree structure
+            var tree = [
+              {
+                  text: "Home"
+              },
+              {
+                  text: "CV"
+              },
+              {
+                  text: "My Projects"
+              },
+              {
+                  text: "Resources by Subject",
+                  nodes: [
+                    {
+                        text: "C#"
+                    },
+                    {
+                        text: "MVC"
+                    },
+                    {
+                        text: "HTML & CSS"
+                    },
+                    {
+                        text: "JavaScript & JQuery"
+                    },
+                    {
+                        text: "Bootstrap"
+                    },
+                    {
+                        text: "Design & Clean Coding"
+                    },
+                    {
+                        text: "TDD & Unit Testing"
+                    },
+                    {
+                        text: "MVC"
+                    }
+                  ]
+              },
+              {
+                  text: "Resources by Type",
+                  nodes: [
+                    {
+                        text: "Books"
+                    },
+                    {
+                        text: "Online Videos"
+                    },
+                    {
+                        text: "Web Pages"
+                    }
+                  ]
+              },
+            ];
+            return tree;
+        }
+
+        $('#tree').treeview({
+            data: getTree(),
+            color: 'white',
+            backColor: '#d71919',
+            showBorder: false,
+            highlightSelected: false,
+            levels: 0
+        });
+
+    </script>
+}

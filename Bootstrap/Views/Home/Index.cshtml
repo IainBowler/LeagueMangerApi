@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bootstrap</h1>
+    <p class="lead">Welcome to my section on bootstrap. Here I will look at the grid system, it's web components and a few of the free styles available.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>The Layout</h2>
+        <p>
+            Bootstrap enables you to easily organise the layout of your web pages using it's grid system.
+            There is a bit to learn here but it does give you a lot of control once you have done.
+        </p>
+        <p>
+            @Html.ActionLink("Learn More >>", "Layout", "Home", new { @class = "btn btn-default" })
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Bootstrap Components</h2>
+        <p>Bootstrap comes with many useful web components. Other people have also written some very useful extras.</p>
+        <p>
+            @Html.ActionLink("Learn More >>", "Components", "Home", new { @class = "btn btn-default" })
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Free Styles</h2>
+        <p>
+            There are many places on the web you can find ready customised Bootstrap styles,
+            or you can make your own.
+        </p>
+        <p>
+            @Html.ActionLink("Find out More >>", "Styles", "Home", new { @class = "btn btn-default" })
+        </p>
+    </div>
+</div>

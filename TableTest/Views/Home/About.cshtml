@@ -1,0 +1,18 @@
+﻿@model IEnumerable<IEnumerable<string>>
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@foreach (IEnumerable<string> row in Model)
+{
+    foreach (string text in row)
+     {
+         <span>@text, </span>
+     }
+    <br/>
+}
+
+<p>Use this area to provide additional information.</p>
